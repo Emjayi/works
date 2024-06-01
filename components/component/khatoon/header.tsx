@@ -32,7 +32,7 @@ const HeaderKhatoon = () => {
 
 export default HeaderKhatoon
 
-function MoonIcon(props) {
+function MoonIcon(props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
@@ -52,7 +52,7 @@ function MoonIcon(props) {
 }
 
 
-function MountainIcon(props) {
+function MountainIcon(props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}
