@@ -232,7 +232,7 @@ export function Nomore() {
                     <div>
                       <h3 className="font-semibold">Celebrate Small Wins</h3>
                       <p className="text-gray-500 dark:text-gray-400">
-                        Don't forget to celebrate the small victories along the way, like a day or week without smoking.
+                        Don&apos;t forget to celebrate the small victories along the way, like a day or week without smoking.
                       </p>
                     </div>
                   </div>
