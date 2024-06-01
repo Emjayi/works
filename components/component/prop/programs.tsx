@@ -31,7 +31,7 @@ export default function Component() {
                             <div className="flex flex-col items-center justify-center space-y-4 bg-gray-100 p-6 rounded-lg dark:bg-gray-800">
                                 <h3 className="text-xl font-bold">Beginner Program</h3>
                                 <p className="text-gray-500 dark:text-gray-400">
-                                    Our Beginner Program is designed for individuals who are new to the world of trading. You'll learn the
+                                    Our Beginner Program is designed for individuals who are new to the world of trading. You&apos;ll learn the
                                     fundamentals of technical and fundamental analysis, risk management, and trading strategies. Our
                                     experienced instructors will guide you every step of the way, ensuring you have a solid foundation to
                                     build upon.
@@ -44,8 +44,8 @@ export default function Component() {
                             <div className="flex flex-col items-center justify-center space-y-4 bg-gray-100 p-6 rounded-lg dark:bg-gray-800">
                                 <h3 className="text-xl font-bold">Intermediate Program</h3>
                                 <p className="text-gray-500 dark:text-gray-400">
-                                    If you've already gained some experience in trading, our Intermediate Program is the perfect next
-                                    step. You'll dive deeper into advanced trading strategies, portfolio management, and market analysis.
+                                    If you&apos;ve already gained some experience in trading, our Intermediate Program is the perfect next
+                                    step. You&apos;ll dive deeper into advanced trading strategies, portfolio management, and market analysis.
                                     Our program will help you refine your skills and take your trading to the next level.
                                 </p>
                                 <div className="flex gap-2">
@@ -57,7 +57,7 @@ export default function Component() {
                                 <h3 className="text-xl font-bold">Pro Program</h3>
                                 <p className="text-gray-500 dark:text-gray-400">
                                     Our Pro Program is designed for experienced traders who are looking to take their skills to the
-                                    highest level. You'll have access to our exclusive resources, including one-on-one mentorship,
+                                    highest level. You&apos;ll have access to our exclusive resources, including one-on-one mentorship,
                                     advanced trading tools, and a community of successful traders. This program is for those who are
                                     serious about becoming professional traders.
                                 </p>

@@ -182,7 +182,7 @@ export default function Home() {
                                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Unlock Your Trading Potential</h2>
                                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                                     Emjay Prop Firm offers a range of trading programs designed to help traders of all levels achieve their
-                                    financial goals. Whether you're a beginner or an experienced trader, we have a program that can help
+                                    financial goals. Whether you&apos;re a beginner or an experienced trader, we have a program that can help
                                     you take your trading to the next level.
                                 </p>
                             </div>

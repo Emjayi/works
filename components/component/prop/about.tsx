@@ -32,7 +32,7 @@ export default function About() {
                                         Our History
                                     </Link>
                                     <Link
-                                        className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                                        className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                                         href="#"
                                     >
                                         Our Mission
@@ -159,7 +159,7 @@ export default function About() {
                                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                                     At Emjay Trading Prop Firm, our mission is to empower traders of all levels to achieve their financial
                                     goals. We believe that with the right tools, support, and guidance, anyone can become a successful
-                                    trader. That's why we've dedicated ourselves to providing our clients with the resources they need to
+                                    trader. That&apos;s why we&apos;ve dedicated ourselves to providing our clients with the resources they need to
                                     thrive in the markets.
                                 </p>
                             </div>
