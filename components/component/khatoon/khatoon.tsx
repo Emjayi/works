@@ -3,9 +3,26 @@ import Link from "next/link"
 import HeaderKhatoon from "./header"
 import { CanvasRevealEffect } from "./homeLinks"
 import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { animate, AnimatePresence, motion, stagger } from "framer-motion";
 
 export function Khatoon() {
+
+  const Khatoon = "Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.";
+
+  const slideUp = {
+    initial: {
+      y: "100%"
+    },
+    open: (i: number) => ({
+      y: "0%",
+      transition: { duration: 0.5, delay: 0.01 * i }
+    }),
+    closed: {
+      y: "100%",
+      transition: { duration: 0.5 }
+    }
+  }
+
   return (
     <div className="flex min-h-[100dvh]" >
       <main className="flex-1 flex from-zinc-400 to-zinc-300 bg-gradient-radial " style={{ backgroundImage: "url(@/public/bg.jpg)" }}>
@@ -15,7 +32,7 @@ export function Khatoon() {
               animationSpeed={5.1}
               containerClassName="bg-red-600"
               colors={[
-                [255, 0, 255]
+                [255, 255, 255]
               ]}
             />
           </Card>
@@ -44,15 +61,31 @@ export function Khatoon() {
             />
           </Card>
         </section>
-        <div className="h-[20dvh] fixed bottom-0 w-[100dvw] text-6xl flex justify-center items-center gap-[6%] mix-blend-difference bg-blend-darken text-zinc-300">
-          <div className=" text-bold ">K</div>
+        {/* <motion.div
+          initial={{ y: 200 }}
+          animate={{ y: 0 }}
+          transition={{
+            duration: .5,
+            delay: 0.5,
+            when: "beforeChildren", //use this instead of delay
+            staggerChildren: 0.2,
+          }}
+          className="h-[20dvh] fixed bottom-0 w-[100dvw] text-6xl flex justify-center items-center gap-[6%] mix-blend-luminosity text-purple-600">
+          <div className="text-bold ">K</div>
           <div className="text-bold ">H</div>
           <div className="text-bold ">A</div>
           <div className="text-bold ">T</div>
           <div className="text-bold ">O</div>
           <div className="text-bold ">O</div>
           <div className="text-bold ">N</div>
-        </div>
+        </motion.div> */}
+        <h1>
+          {
+            "Khatoon".split(" ").map((word, index) => {
+              return <span key={index}><motion.span variants={slideUp} custom={index} initial={"closed"} animate={"open"} key={index}>{word}</motion.span></span>
+            })
+          }
+        </h1>
       </main>
     </div>
   )
