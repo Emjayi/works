@@ -1,7 +1,6 @@
 "use client"
 import { link } from 'fs'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const page = () => {
@@ -13,7 +12,6 @@ const page = () => {
         { name: "Snake", slug: "snake" },
         { name: "Minesweeper", slug: "minesweeper" },
     ]
-    const router = useRouter()
     return (
 
         <div className='grid grid-rows-2 grid-cols-3 gap-4'>
