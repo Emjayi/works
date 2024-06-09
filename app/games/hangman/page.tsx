@@ -7,6 +7,7 @@ const Hangman = () => {
     const [gussed, setGuessed] = useState("");
     const [guess, setGuess] = useState(5);
     const [word, setWord] = useState("");
+    const [desc, setDesc] = useState("");
     const [isGameOver, setIsGameOver] = useState(false);
 
     if (guess === 0) {
@@ -15,9 +16,10 @@ const Hangman = () => {
 
     const randomWord = () => {
         async function fetchData() {
-            const response = await fetch("https://random-word-api.herokuapp.com/word")
+            const response = await fetch("https://random-words-api.vercel.app/word/")
             const data = await response.json()
-            setWord(data[0])
+            setWord(data[0].word)
+            setDesc(data[0].definition)
         }
         fetchData()
     }
