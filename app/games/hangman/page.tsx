@@ -42,7 +42,7 @@ const Hangman = () => {
             <div className='flex flex-col gap-2 flex-wrap justify-center p-1 bg-slate-500 mt-4'>
                 <div className='flex justify-center'>
                     {word.split("").map((letter, index) => (
-                        <span className='w-8 h-8 content-center rounded-md'>
+                        <span key={index} className='w-8 h-8 content-center rounded-md'>
                             {letter === gussed ? letter : "-"}
                         </span>
                     ))}
@@ -51,7 +51,7 @@ const Hangman = () => {
             </div>
             <div className='flex gap-2 w-full flex-wrap justify-center p-10'>
                 {"abcdefghijklmnopqrstuvwxyz".split('').map((letter, index) => (
-                    <p className='bg-gray-300 hover:bg-gray-300/50 cursor-pointer duration-150 w-8 h-8 content-center rounded-md' onClick={() => { setGuessed(letter) }}>{letter}</p>
+                    <p key={index} className='bg-gray-300 hover:bg-gray-300/50 cursor-pointer duration-150 w-8 h-8 content-center rounded-md' onClick={() => { setGuessed(letter) }}>{letter}</p>
                 ))}
             </div>
 
