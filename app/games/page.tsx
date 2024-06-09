@@ -1,7 +1,9 @@
 "use client"
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React from 'react'
 
+const router = useRouter()
 const page = () => {
     const games = [
         { name: "TicTokToe", slug: "tic-tac-toe" },
@@ -12,7 +14,6 @@ const page = () => {
         { name: "Minesweeper", slug: "minesweeper" },
     ]
     return (
-
         <div className='grid grid-rows-2 grid-cols-3 gap-4'>
             {games.map(({ slug, name }, index) => {
                 return (
