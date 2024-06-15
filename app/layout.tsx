@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
